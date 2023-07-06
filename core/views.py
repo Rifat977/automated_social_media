@@ -14,7 +14,7 @@ from google.oauth2 import service_account
 @csrf_exempt
 @require_POST
 def facebook_post_view(request):
-    access_token = 'EAAokrcxrOrUBAEYuC0UoSzDCj4sID8vKmRhs3Frg963PxI0n8muyHIE2dxeEnIpGf4GQJwDUTkNSvftcuZCGUeCIk39Lwp25Rbsq1KZAN3GMgifhnhiZCbBb3I1sZCjLnOaOGiQioyc3ZCXbVVZBoJOf4EqtROtpVXUPZCCpm4Q022PHQEGJaTZC7RZBE0g2q9X0c65sBnwZBqbc4DA7oEntEZB'
+    access_token = ''
     graph = facebook.GraphAPI(access_token)
 
     def post_to_facebook(message, media_url=None, media_type=None):
